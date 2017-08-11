@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.tdt.js_v2.MainActivity"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_marginTop="30dp"
+            android:id="@+id/layout_joystick1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/image_button_bg" />
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+        <Button
+            android:layout_marginTop="50dp"
+            android:id="@+id/btnInfo"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/btnselect_click" />
+
+        <Button
+            android:id="@+id/btnConnect"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/btnconnect_click" />
+
+        <Button
+            android:layout_marginTop="50dp"
+            android:id="@+id/btnChat"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/btnstart_click" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp" />
+
+                <Button
+                    android:id="@+id/btnX"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/btnx_click" />
+
+                <TextView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnY"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/btny_click" />
+
+                <TextView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp" />
+
+                <Button
+                    android:id="@+id/btnA"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/btna_click" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp" />
+
+                <Button
+                    android:id="@+id/btnB"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/btnb_click" />
+
+                <TextView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:text=""
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#444444"
+                android:textSize="20dp" />
+
+            <TextView
+                android:text=""
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#444444"
+                android:textSize="20dp" />
+
+            <TextView
+                android:text=""
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#444444"
+                android:textSize="20dp" />
+
+            <TextView
+                android:text=""
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#444444"
+                android:textSize="20dp" />
+
+            <TextView
+                android:text="Direction:"
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#444444"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="2.1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="@drawable/pad"
+                android:layout_marginRight="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+
+                    <Button
+                        android:id="@+id/btnLeft"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/btnleft_click" />
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnTop"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/btntop_click" />
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+
+                    <Button
+                        android:id="@+id/btnDown"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/btndown_click" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+
+                    <Button
+                        android:id="@+id/btnRight"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/btnright_click" />
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_marginLeft="25dp"
+                android:id="@+id/layout_joystick2"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:background="@drawable/image_button_bg"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#444444"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#444444"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#444444"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#444444"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#444444"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

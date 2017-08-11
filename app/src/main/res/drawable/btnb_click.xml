@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- this is defines a button when normal -->
+    <item android:drawable="@drawable/btnb_clik"
+        android:state_pressed="true" />
+
+    <!-- this is defines a button when clicked -->
+    <item android:drawable="@drawable/btnb"
+        android:state_pressed="false" />
+
+</selector>
